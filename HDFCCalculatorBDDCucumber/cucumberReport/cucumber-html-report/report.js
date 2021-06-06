@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "line": 22,
+  "line": 7,
   "name": "To Calculate the maturity amount for fixed deposite",
   "description": "",
   "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite",
@@ -27,63 +27,112 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 21,
-      "name": "@RecurringDeposite"
+      "line": 6,
+      "name": "@FixedDeposite"
     },
     {
-      "line": 21,
-      "name": "@RD"
+      "line": 6,
+      "name": "@FD"
     }
   ]
 });
 formatter.step({
-  "line": 23,
-  "name": "a user landed on the hdfc RD calculator page",
+  "line": 8,
+  "name": "a user landed on the hdfc FD calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
-  "name": "the user given with \"\u003camountOfDeposit\u003e\" deposite terms for \"\u003cdepositMonths\u003e\", \"\u003ccitizenType\u003e\", \"\u003cstartMonth\u003e\" and \"\u003cstartDate\u003e\"",
+  "line": 9,
+  "name": "the user given with \"\u003ctypeOfFixedDeposit\u003e\" deposite terms \"\u003cmonths\u003e\" and \"\u003cdays\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
-  "name": "verify the aggregate interest amount",
+  "line": 10,
+  "name": "the fixed deposite \"\u003cdate\u003e\" and \"\u003camountOfDeposit\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I verify the aggregate interest amount",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 27,
+  "line": 13,
   "name": "",
   "description": "",
   "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;",
   "rows": [
     {
       "cells": [
-        "amountOfDeposit",
-        "depositMonths",
-        "citizenType",
-        "startMonth",
-        "startDate"
+        "typeOfFixedDeposit",
+        "months",
+        "days",
+        "date",
+        "amountOfDeposit"
       ],
-      "line": 28,
+      "line": 14,
       "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;1"
     },
     {
       "cells": [
-        "9000",
-        "15",
-        "Yes",
-        "Jun",
-        "8"
+        "Monthly Payout",
+        "10",
+        "8",
+        "5",
+        "9000"
       ],
-      "line": 29,
+      "line": 15,
       "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;2"
+    },
+    {
+      "cells": [
+        "Quarterly Payout",
+        "18",
+        "10",
+        "7",
+        "25000"
+      ],
+      "line": 16,
+      "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;3"
+    },
+    {
+      "cells": [
+        "Reinvestment",
+        "10",
+        "15",
+        "25",
+        "30000"
+      ],
+      "line": 17,
+      "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;4"
+    },
+    {
+      "cells": [
+        "Reinvestment",
+        "36",
+        "20",
+        "17",
+        "78000"
+      ],
+      "line": 18,
+      "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;5"
+    },
+    {
+      "cells": [
+        "Monthly Payout",
+        "24",
+        "19",
+        "20",
+        "8800"
+      ],
+      "line": 19,
+      "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;6"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 29,
+  "line": 15,
   "name": "To Calculate the maturity amount for fixed deposite",
   "description": "",
   "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;2",
@@ -91,82 +140,151 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 21,
-      "name": "@RecurringDeposite"
-    },
-    {
-      "line": 21,
-      "name": "@RD"
-    },
-    {
       "line": 2,
       "name": "@HDFCCalculator"
+    },
+    {
+      "line": 6,
+      "name": "@FixedDeposite"
+    },
+    {
+      "line": 6,
+      "name": "@FD"
     }
   ]
 });
 formatter.step({
-  "line": 23,
-  "name": "a user landed on the hdfc RD calculator page",
+  "line": 8,
+  "name": "a user landed on the hdfc FD calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
-  "name": "the user given with \"9000\" deposite terms for \"15\", \"Yes\", \"Jun\" and \"8\"",
+  "line": 9,
+  "name": "the user given with \"Monthly Payout\" deposite terms \"10\" and \"8\"",
   "matchedColumns": [
     0,
     1,
-    2,
-    3,
-    4
+    2
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
-  "name": "verify the aggregate interest amount",
+  "line": 10,
+  "name": "the fixed deposite \"5\" and \"9000\"",
+  "matchedColumns": [
+    3,
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I verify the aggregate interest amount",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_RD_calculator_page()"
+  "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
 });
 formatter.result({
-  "duration": 42101409000,
+  "duration": 35432988700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "9000",
+      "val": "Monthly Payout",
       "offset": 21
     },
     {
-      "val": "15",
-      "offset": 47
-    },
-    {
-      "val": "Yes",
+      "val": "10",
       "offset": 53
     },
     {
-      "val": "Jun",
-      "offset": 60
-    },
-    {
       "val": "8",
-      "offset": 70
+      "offset": 62
     }
   ],
-  "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_for_and(String,String,String,String,String)"
+  "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_and(String,String,String)"
 });
 formatter.result({
-  "duration": 5317014300,
-  "error_message": "org.openqa.selenium.WebDriverException: element click intercepted: Element \u003ctd class\u003d\" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled\"\u003e...\u003c/td\u003e is not clickable at point (646, 508). Other element would receive the click: \u003ctable class\u003d\"ui-datepicker-calendar\"\u003e...\u003c/table\u003e\n  (Session info: chrome\u003d90.0.4430.212)\n  (Driver info: chromedriver\u003d90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}),platform\u003dWindows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 1.13 seconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027LAPTOP-2D7HJLAU\u0027, ip: \u0027192.168.1.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:60359}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir\u003dC:\\Users\\ANWESHA\\AppData\\Local\\Temp\\scoped_dir1204_845848981}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d90.0.4430.212, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: e7af286a57625bbb3e10b2ba190083f6\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)\r\n\tat pages.HDFCRCIntrstCalculationPage.calculateInterest(HDFCRCIntrstCalculationPage.java:85)\r\n\tat stepdefinitions.HDFCStepDefinition.the_user_given_with_deposite_terms_for_and(HDFCStepDefinition.java:60)\r\n\tat ✽.When the user given with \"9000\" deposite terms for \"15\", \"Yes\", \"Jun\" and \"8\"(src/test/resources/HDFCCalculator.feature:24)\r\n",
+  "duration": 3510763300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "5",
+      "offset": 20
+    },
+    {
+      "val": "9000",
+      "offset": 28
+    }
+  ],
+  "location": "HDFCStepDefinition.the_fixed_deposite_and(String,String)"
+});
+formatter.result({
+  "duration": 1958161300,
+  "error_message": "org.openqa.selenium.ElementNotVisibleException: Timed out after 0 seconds. Element not available\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027LAPTOP-2D7HJLAU\u0027, ip: \u0027192.168.1.103\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:147)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:102)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat pages.HDFCInterestCalculationPage.selectDateOfFD(HDFCInterestCalculationPage.java:53)\r\n\tat stepdefinitions.HDFCStepDefinition.the_fixed_deposite_and(HDFCStepDefinition.java:43)\r\n\tat ✽.And the fixed deposite \"5\" and \"9000\"(src/test/resources/HDFCCalculator.feature:10)\r\n",
   "status": "failed"
 });
 formatter.match({
-  "location": "HDFCStepDefinition.verify_the_aggregate_interest_amount()"
+  "location": "HDFCStepDefinition.i_verify_the_aggregate_interest_amount()"
 });
 formatter.result({
   "status": "skipped"
 });
+formatter.scenario({
+  "line": 16,
+  "name": "To Calculate the maturity amount for fixed deposite",
+  "description": "",
+  "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@HDFCCalculator"
+    },
+    {
+      "line": 6,
+      "name": "@FixedDeposite"
+    },
+    {
+      "line": 6,
+      "name": "@FD"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "a user landed on the hdfc FD calculator page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "the user given with \"Quarterly Payout\" deposite terms \"18\" and \"10\"",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "the fixed deposite \"7\" and \"25000\"",
+  "matchedColumns": [
+    3,
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I verify the aggregate interest amount",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
 });

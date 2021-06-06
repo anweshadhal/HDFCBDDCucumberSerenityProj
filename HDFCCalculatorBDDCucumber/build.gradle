@@ -46,8 +46,10 @@ test {
     systemProperties System.getProperties()
 }
 
-task runHDFCCalculatorBDDCucumberUI()
+task runHDFCCalculatorBDDCucumberUI(type: Test)
 {
+	dependsOn('clean','downloadDriver')
+	testLogging.showStandardStreams=true
 	exclude('**/Library.java')
 	include "runner/HDFCRunner.class"
 	systemProperties System.getProperties()
