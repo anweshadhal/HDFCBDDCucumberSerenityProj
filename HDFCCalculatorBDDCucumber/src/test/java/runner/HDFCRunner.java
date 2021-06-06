@@ -10,8 +10,8 @@ import cucumber.api.CucumberOptions;
 		,glue={"stepdefinitions"},
 		plugin={"pretty", "html:cucumberReport/cucumber-html-report","json:cucumberReport/cucumber-report.json"}
 		
-		,tags={"@RecurringDeposite"}
-		//,tags={"@FixedDeposite"}
+		//,tags={"@RecurringDeposite"}
+		,tags={"@FixedDeposite"}
 		//https://github.com/serenity-bdd/serenity-cucumber/issues/261
 		
 		)
