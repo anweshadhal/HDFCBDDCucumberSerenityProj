@@ -12,7 +12,7 @@ Feature: Calculate the maturity amount for different deposites in HDFC bank
 
     Examples: 
       | typeOfFixedDeposit | months | days | date | amountOfDeposit |
-      | Monthly Payout     |     10 |    8 |    5 |            9000 |
+      | Monthly Payout     |     24 |   19 |   20 |            9000 |
       | Quarterly Payout   |     18 |   10 |    7 |           25000 |
       | Reinvestment       |     10 |   15 |   25 |           30000 |
       | Reinvestment       |     36 |   20 |   17 |           78000 |

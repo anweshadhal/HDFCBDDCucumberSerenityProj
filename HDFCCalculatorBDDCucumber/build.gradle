@@ -46,8 +46,9 @@ test {
     systemProperties System.getProperties()
 }
 
-task runHDFCCalculatorBDDCucumberUI(type: Test){
+task runHDFCCalculatorBDDCucumberUI(type: Test) {
 	testLogging.showStandardStreams=true
+	systemProperties['browserName'] = project.hasProperty('browserName') ? browserName : null
 	exclude('**/Library.java')
 	include "runner/HDFCRunner.class"
 	systemProperties System.getProperties()
