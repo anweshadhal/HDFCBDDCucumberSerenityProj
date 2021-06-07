@@ -35,11 +35,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 5],
+                ['Passing', 0],
                 ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0],
+                ['Errors',  5],
                 ['Compromised',  0],
                 ['Untested',  0],
             ]
@@ -68,11 +68,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '5 requirements tested successfully'},
+                {label: '0 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
-                {label: '0} requirements with errors'},
+                {label: '5} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
             ]
@@ -160,7 +160,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-05-2021 21:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-06-2021 12:14</span>
     <br style="clear:left"/>
 </div>
 
@@ -193,8 +193,8 @@
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
                                     <td>5</td>
-                                    <td>5</td>
                                     <td>0</td>
+                                    <td>5</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -224,8 +224,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>5</td>
-            <td>5 (100%)</td>
             <td>0 (0%)</td>
+            <td>5 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -240,14 +240,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>5</td>
-            <td>5 (100%)</td>
             <td>0 (0%)</td>
+            <td>5 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">2 minutes 31 seconds</td>
+                <td colspan="5">5 seconds</td>
         </tr>
         </body>
     </table>
@@ -275,14 +275,14 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
-                                        <a href="31f6e740af370ee1108b860792487c3c.html" class="ellipsis" title="">
+                                        <a href="31f6e740af370ee1108b860792487c3c.html" class="ellipsis" title="Unsupported driver exception: Could n...">
                                             To Calculate The Maturity Amount For Fixed Deposite&nbsp;(5  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
@@ -292,7 +292,7 @@
                                 <td class="lightgreentext">25</td>
 
 
-                                <td class="lightgreentext">151.9</td>
+                                <td class="lightgreentext">4.83</td>
                             </tr>
                         </tbody>
                     </table>

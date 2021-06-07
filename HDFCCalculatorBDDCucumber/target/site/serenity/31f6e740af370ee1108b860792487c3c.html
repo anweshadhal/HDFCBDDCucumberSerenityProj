@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-05-2021 21:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-06-2021 12:47</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -86,13 +86,6 @@
                             <p class="tag">
                                 <span class="badge tag-badge">
                                     <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
-                                                                      href="b4b442c1713fe234dd885a3f4af967d9.html">Recurringdeposite
-                                    (tag)</a>
-                                </span>
-                            </p>
-                            <p class="tag">
-                                <span class="badge tag-badge">
-                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
                                                                       href="a6b8cd69569864465edf760b397de105.html">Hdfccalculator
                                     (tag)</a>
                                 </span>
@@ -100,7 +93,14 @@
                             <p class="tag">
                                 <span class="badge tag-badge">
                                     <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
-                                                                      href="656a6914c13ffa3fb243dba2fbbad104.html">RD
+                                                                      href="84543210a1133d0d9345112c42ef330a.html">Fixeddeposite
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
+                                                                      href="c88440767a847381744badb28d788a25.html">FD
                                     (tag)</a>
                                 </span>
                             </p>
@@ -131,7 +131,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given a user landed on the hdfc RD calculator page<br>When the user given with "&lt;amountOfDeposit&gt;" deposite terms for "&lt;depositMonths&gt;", "&lt;citizenType&gt;", "&lt;startMonth&gt;" and "&lt;startDate&gt;"<br>Then verify the aggregate interest amount</div>
+        <div class="scenario">Given a user landed on the hdfc FD calculator page<br>When the user given with "&lt;typeOfFixedDeposit&gt;" deposite terms "&lt;months&gt;" and "&lt;days&gt;"<br>And the fixed deposite "&lt;date&gt;" and "&lt;amountOfDeposit&gt;"<br>Then I verify the aggregate interest amount</div>
 
     </div>
 
@@ -145,25 +145,77 @@
                 <thead>
                 <tr>
                     <th>#</th>
+                        <th>Typeoffixeddeposit</th>
+                        <th>Months</th>
+                        <th>Days</th>
+                        <th>Date</th>
                         <th>Amountofdeposit</th>
-                        <th>Depositmonths</th>
-                        <th>Citizentype</th>
-                        <th>Startmonth</th>
-                        <th>Startdate</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="test-ERROR"><a href="#0">1</a></td>
-                            <td class="test-ERROR"><a href="#0">9000</a>
+                            <td class="test-ERROR"><a href="#0">Monthly Payout</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">15</a>
-                            </td>
-                            <td class="test-ERROR"><a href="#0">Yes</a>
-                            </td>
-                            <td class="test-ERROR"><a href="#0">Jun</a>
+                            <td class="test-ERROR"><a href="#0">10</a>
                             </td>
                             <td class="test-ERROR"><a href="#0">8</a>
+                            </td>
+                            <td class="test-ERROR"><a href="#0">5</a>
+                            </td>
+                            <td class="test-ERROR"><a href="#0">9000</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#1">2</a></td>
+                            <td class="test-SUCCESS"><a href="#1">Quarterly Payout</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">18</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">10</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">7</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">25000</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#2">3</a></td>
+                            <td class="test-SUCCESS"><a href="#2">Reinvestment</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">10</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">15</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">25</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">30000</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#3">4</a></td>
+                            <td class="test-SUCCESS"><a href="#3">Reinvestment</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">36</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">20</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">17</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">78000</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#4">5</a></td>
+                            <td class="test-SUCCESS"><a href="#4">Monthly Payout</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#4">24</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#4">19</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#4">20</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#4">8800</a>
                             </td>
                     </tr>
                 </tbody>
@@ -200,7 +252,7 @@
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">To Calculate the maturity amount for fixed deposite #1: {amountOfDeposit=9000, depositMonths=15, citizenType=Yes, startMonth=Jun, startDate=8}</span>
+                            <span class="top-level-step">To Calculate the maturity amount for fixed deposite #1: {typeOfFixedDeposit=Monthly Payout, months=10, days=8, date=5, amountOfDeposit=9000}</span>
                             </a>
 
                         </div>
@@ -208,7 +260,7 @@
                         <td width="100" class="ERROR-text">
                         </td>
                     <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">54.57s</span></td>
+                    <td width="100"><span class="top-level-step">34.77s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -222,21 +274,45 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Given a user landed on the hdfc RD calculator page</span>
+                            <span class="nested-group-step">Given a user landed on the hdfc FD calculator page</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=0">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="d05577c58b795c39c34da94e7b67ceb8.png"
-                                         href="d05577c58b795c39c34da94e7b67ceb8.png"
+                                    <img src="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         href="2184d12294f3818fab1dba0a9a14d6c9.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">47.95s</span></td>
+                    <td width="100"><span class="nested-group-step">28.81s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When the user given with "Monthly Payout" deposite terms "10" and "8"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=1">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d0f4c98733ebaa5e4c44f83ec4d68942.png"
+                                         href="d0f4c98733ebaa5e4c44f83ec4d68942.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.56s</span></td>
                 </tr>
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
@@ -246,28 +322,28 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">When the user given with "9000" deposite terms for "15", "Yes", "Jun" and "8"</span>
+                            <span class="nested-group-step">And the fixed deposite "5" and "9000"</span>
 
                         </div>
                     </td>
                         <td width="100" class="ERROR-text">
-                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=1">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=2">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="28e59d62d10cb128e987f81ecb68c77c.png"
-                                         href="28e59d62d10cb128e987f81ecb68c77c.png"
+                                    <img src="0701640ef459389cc20107d155fc1fb6.png"
+                                         href="0701640ef459389cc20107d155fc1fb6.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">6.57s</span></td>
+                    <td width="100"><span class="nested-group-step">3.32s</span></td>
                 </tr>
                     <tr class="test-ERROR">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
                             <div class="error-message ellipsis"
-                                 title='Web driver exception: element click intercepted: Element &lt;td class=&quot; ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled&quot;&gt;...&lt;/td&gt; is not clickable at point (646, 508). Other element would receive the click: &lt;table class=&quot;ui-datepicker-calendar&quot;&gt;...&lt;/table&gt;  (Session info: chrome=90.0.4430.212)  (Driver info: chromedriver=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 1.13 secondsBuild info: version: &#39;2.53.1&#39;, revision: &#39;a36b8b1cd5757287168e54b817830adce9b0158d&#39;, time: &#39;2016-06-30 19:26:09&#39;System info: host: &#39;LAPTOP-2D7HJLAU&#39;, ip: &#39;192.168.1.105&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_261&#39;Driver info: org.openqa.selenium.remote.RemoteWebDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60359}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=C:\Users\ANWESHA\AppData\Local\Temp\scoped_dir1204_845848981}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=90.0.4430.212, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: e7af286a57625bbb3e10b2ba190083f6Build info: version: &#39;2.53.1&#39;, revision: &#39;a36b8b1cd5757287168e54b817830adce9b0158d&#39;, time: &#39;2016-06-30 19:26:09&#39;System info: host: &#39;LAPTOP-2D7HJLAU&#39;, ip: &#39;192.168.1.105&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_261&#39;Driver info: driver.version: unknown'>
-                                <pre>Web driver exception: element click intercepted: Element &lt;td class=&quot; ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled&quot;&gt;...&lt;/td&gt; is not clickable at point (646, 508). Other el...</pre>
+                                 title='Element not visible exception: Timed out after 0 seconds. Element not available'>
+                                <pre>Element not visible exception: Timed out after 0 seconds. Element not available</pre>
                             </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
@@ -285,17 +361,17 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                org.openqa.selenium.WebDriverException
+                                org.openqa.selenium.ElementNotVisibleException
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                    <h5>element click intercepted: Element <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">...</td> is not clickable at point (646, 508). Other element would receive the click: <table class="ui-datepicker-calendar">...</table><br>  (Session info: chrome=90.0.4430.212)<br>  (Driver info: chromedriver=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 1.13 seconds<br>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br>System info: host: 'LAPTOP-2D7HJLAU', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60359}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir=C:\Users\ANWESHA\AppData\Local\Temp\scoped_dir1204_845848981}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=90.0.4430.212, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br>Session ID: e7af286a57625bbb3e10b2ba190083f6<br>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br>System info: host: 'LAPTOP-2D7HJLAU', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'<br>Driver info: driver.version: unknown</h5>
-                                pages.HDFCRCIntrstCalculationPage.calculateInterest(HDFCRCIntrstCalculationPage.java
-                                    :85) <br>
-                                stepdefinitions.HDFCStepDefinition.the_user_given_with_deposite_terms_for_and(HDFCStepDefinition.java
-                                    :60) <br>
-                                ✽.When the user given with "9000" deposite terms for "15", "Yes", "Jun" and "8"(src/test/resources/HDFCCalculator.feature
-                                    :24) <br>
+                                    <h5>Timed out after 0 seconds. Element not available<br>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br>System info: host: 'LAPTOP-2D7HJLAU', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'<br>Driver info: driver.version: unknown<br>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br>System info: host: 'LAPTOP-2D7HJLAU', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'<br>Driver info: driver.version: unknown</h5>
+                                pages.HDFCInterestCalculationPage.selectDateOfFD(HDFCInterestCalculationPage.java
+                                    :53) <br>
+                                stepdefinitions.HDFCStepDefinition.the_fixed_deposite_and(HDFCStepDefinition.java
+                                    :43) <br>
+                                ✽.And the fixed deposite "5" and "9000"(src/test/resources/HDFCCalculator.feature
+                                    :10) <br>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -315,14 +391,550 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Then verify the aggregate interest amount</span>
+                            <span class="nested-group-step">Then I verify the aggregate interest amount</span>
 
                         </div>
                     </td>
                         <td width="100" class="SKIPPED-text">
                         </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.02s</span></td>
+                    <td width="100"><span class="nested-group-step">0.03s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">To Calculate the maturity amount for fixed deposite #2: {typeOfFixedDeposit=Quarterly Payout, months=18, days=10, date=7, amountOfDeposit=25000}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=3">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f3ee5a9a57ba87183e0f31a5ed81c4da.png"
+                                         href="f3ee5a9a57ba87183e0f31a5ed81c4da.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">28.31s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Given a user landed on the hdfc FD calculator page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=4">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         href="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">18.78s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When the user given with "Quarterly Payout" deposite terms "18" and "10"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=5">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="a967699b617aea59215284d95c896b12.png"
+                                         href="a967699b617aea59215284d95c896b12.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.8s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And the fixed deposite "7" and "25000"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=6">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f3ee5a9a57ba87183e0f31a5ed81c4da.png"
+                                         href="f3ee5a9a57ba87183e0f31a5ed81c4da.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.96s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then I verify the aggregate interest amount</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=7">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f3ee5a9a57ba87183e0f31a5ed81c4da.png"
+                                         href="f3ee5a9a57ba87183e0f31a5ed81c4da.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.5s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                            <span class="top-level-step">To Calculate the maturity amount for fixed deposite #3: {typeOfFixedDeposit=Reinvestment, months=10, days=15, date=25, amountOfDeposit=30000}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=8">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="32f12d7c19e018199602407c5b1f1edb.png"
+                                         href="32f12d7c19e018199602407c5b1f1edb.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">24.13s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Given a user landed on the hdfc FD calculator page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=9">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         href="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">15.32s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When the user given with "Reinvestment" deposite terms "10" and "15"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=10">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="7dd53507b73cec4ed7acb7702eaef9d8.png"
+                                         href="7dd53507b73cec4ed7acb7702eaef9d8.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.78s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And the fixed deposite "25" and "30000"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=11">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b1c0506669f8ea310ae3d3586c3b0e03.png"
+                                         href="b1c0506669f8ea310ae3d3586c3b0e03.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.35s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then I verify the aggregate interest amount</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=12">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="32f12d7c19e018199602407c5b1f1edb.png"
+                                         href="32f12d7c19e018199602407c5b1f1edb.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.41s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="3"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection3 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                            <span class="top-level-step">To Calculate the maturity amount for fixed deposite #4: {typeOfFixedDeposit=Reinvestment, months=36, days=20, date=17, amountOfDeposit=78000}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=13">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="249dc258a8bd981c2d0cd25c984f1b42.png"
+                                         href="249dc258a8bd981c2d0cd25c984f1b42.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">24.02s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Given a user landed on the hdfc FD calculator page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=14">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         href="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">14.95s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When the user given with "Reinvestment" deposite terms "36" and "20"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=15">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="daeb62fa874941ed6caef8a311ea22d9.png"
+                                         href="daeb62fa874941ed6caef8a311ea22d9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And the fixed deposite "17" and "78000"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=16">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="82068b327b0b0c7391bb190eff5a44da.png"
+                                         href="82068b327b0b0c7391bb190eff5a44da.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then I verify the aggregate interest amount</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=17">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="249dc258a8bd981c2d0cd25c984f1b42.png"
+                                         href="249dc258a8bd981c2d0cd25c984f1b42.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.38s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="4"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection4 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block;">
+                            <span class="top-level-step">To Calculate the maturity amount for fixed deposite #5: {typeOfFixedDeposit=Monthly Payout, months=24, days=19, date=20, amountOfDeposit=8800}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=18">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d6c7c1f9bae9b21fe3f9cb0edf10f439.png"
+                                         href="d6c7c1f9bae9b21fe3f9cb0edf10f439.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">22.23s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection4" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Given a user landed on the hdfc FD calculator page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=19">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         href="2184d12294f3818fab1dba0a9a14d6c9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">13.17s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When the user given with "Monthly Payout" deposite terms "24" and "19"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=20">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="21d43174610e5ad6fc7221c752117878.png"
+                                         href="21d43174610e5ad6fc7221c752117878.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.55s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And the fixed deposite "20" and "8800"</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d6c7c1f9bae9b21fe3f9cb0edf10f439.png"
+                                         href="d6c7c1f9bae9b21fe3f9cb0edf10f439.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.89s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then I verify the aggregate interest amount</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="31f6e740af370ee1108b860792487c3c_screenshots.html#screenshots?screenshot=22">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d6c7c1f9bae9b21fe3f9cb0edf10f439.png"
+                                         href="d6c7c1f9bae9b21fe3f9cb0edf10f439.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.37s</span></td>
                 </tr>
 
                     </table>
@@ -331,7 +943,7 @@
                 <tr class="test-ERROR">
                     <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>54.84s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>134.7s</em></span></td>
                 </tr>
 
             </table>

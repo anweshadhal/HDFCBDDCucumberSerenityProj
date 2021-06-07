@@ -48,10 +48,11 @@ test {
 
 task runHDFCCalculatorBDDCucumberUI(type: Test) {
 	testLogging.showStandardStreams=true
-	systemProperties['browserName'] = project.hasProperty('browserName') ? browserName : null
+	systemProperties System.getProperties()
+	//systemProperties['browserName'] = project.hasProperty('browserName') ? browserName : null
 	exclude('**/Library.java')
 	include "runner/HDFCRunner.class"
-	systemProperties System.getProperties()
+	
 }
 
 gradle.startParameter.continueOnFailure = true

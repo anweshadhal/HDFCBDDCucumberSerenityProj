@@ -1,0 +1,549 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Anwesha Dhal"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 15,
+        "name": "To Calculate the maturity amount for fixed deposite",
+        "description": "",
+        "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27384874100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user landed on the hdfc FD calculator page",
+            "match": {
+              "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2351494400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user given with \"Monthly Payout\" deposite terms \"10\" and \"8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Monthly Payout",
+                  "offset": 21
+                },
+                {
+                  "val": "10",
+                  "offset": 53
+                },
+                {
+                  "val": "8",
+                  "offset": 62
+                }
+              ],
+              "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_and(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2169776600,
+              "error_message": "org.openqa.selenium.ElementNotVisibleException: Timed out after 0 seconds. Element not available\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027LAPTOP-2D7HJLAU\u0027, ip: \u0027192.168.1.103\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:147)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:102)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat pages.HDFCInterestCalculationPage.selectDateOfFD(HDFCInterestCalculationPage.java:53)\r\n\tat stepdefinitions.HDFCStepDefinition.the_fixed_deposite_and(HDFCStepDefinition.java:43)\r\n\tat ✽.And the fixed deposite \"5\" and \"9000\"(src/test/resources/HDFCCalculator.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the fixed deposite \"5\" and \"9000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 20
+                },
+                {
+                  "val": "9000",
+                  "offset": 28
+                }
+              ],
+              "location": "HDFCStepDefinition.the_fixed_deposite_and(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I verify the aggregate interest amount",
+            "match": {
+              "location": "HDFCStepDefinition.i_verify_the_aggregate_interest_amount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HDFCCalculator"
+          },
+          {
+            "line": 6,
+            "name": "@FixedDeposite"
+          },
+          {
+            "line": 6,
+            "name": "@FD"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "To Calculate the maturity amount for fixed deposite",
+        "description": "",
+        "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18531860900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user landed on the hdfc FD calculator page",
+            "match": {
+              "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1613850200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user given with \"Quarterly Payout\" deposite terms \"18\" and \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Quarterly Payout",
+                  "offset": 21
+                },
+                {
+                  "val": "18",
+                  "offset": 55
+                },
+                {
+                  "val": "10",
+                  "offset": 64
+                }
+              ],
+              "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_and(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6739503800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the fixed deposite \"7\" and \"25000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 20
+                },
+                {
+                  "val": "25000",
+                  "offset": 28
+                }
+              ],
+              "location": "HDFCStepDefinition.the_fixed_deposite_and(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238252700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify the aggregate interest amount",
+            "match": {
+              "location": "HDFCStepDefinition.i_verify_the_aggregate_interest_amount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HDFCCalculator"
+          },
+          {
+            "line": 6,
+            "name": "@FixedDeposite"
+          },
+          {
+            "line": 6,
+            "name": "@FD"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "To Calculate the maturity amount for fixed deposite",
+        "description": "",
+        "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15015113000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user landed on the hdfc FD calculator page",
+            "match": {
+              "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1559192000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user given with \"Reinvestment\" deposite terms \"10\" and \"15\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reinvestment",
+                  "offset": 21
+                },
+                {
+                  "val": "10",
+                  "offset": 51
+                },
+                {
+                  "val": "15",
+                  "offset": 60
+                }
+              ],
+              "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_and(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6088775300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the fixed deposite \"25\" and \"30000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 20
+                },
+                {
+                  "val": "30000",
+                  "offset": 29
+                }
+              ],
+              "location": "HDFCStepDefinition.the_fixed_deposite_and(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226197000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify the aggregate interest amount",
+            "match": {
+              "location": "HDFCStepDefinition.i_verify_the_aggregate_interest_amount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HDFCCalculator"
+          },
+          {
+            "line": 6,
+            "name": "@FixedDeposite"
+          },
+          {
+            "line": 6,
+            "name": "@FD"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "To Calculate the maturity amount for fixed deposite",
+        "description": "",
+        "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14711491200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user landed on the hdfc FD calculator page",
+            "match": {
+              "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1256541200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user given with \"Reinvestment\" deposite terms \"36\" and \"20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reinvestment",
+                  "offset": 21
+                },
+                {
+                  "val": "36",
+                  "offset": 51
+                },
+                {
+                  "val": "20",
+                  "offset": 60
+                }
+              ],
+              "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_and(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6697138500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the fixed deposite \"17\" and \"78000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17",
+                  "offset": 20
+                },
+                {
+                  "val": "78000",
+                  "offset": 29
+                }
+              ],
+              "location": "HDFCStepDefinition.the_fixed_deposite_and(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191637000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify the aggregate interest amount",
+            "match": {
+              "location": "HDFCStepDefinition.i_verify_the_aggregate_interest_amount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HDFCCalculator"
+          },
+          {
+            "line": 6,
+            "name": "@FixedDeposite"
+          },
+          {
+            "line": 6,
+            "name": "@FD"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "To Calculate the maturity amount for fixed deposite",
+        "description": "",
+        "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank;to-calculate-the-maturity-amount-for-fixed-deposite;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12954047800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user landed on the hdfc FD calculator page",
+            "match": {
+              "location": "HDFCStepDefinition.a_user_landed_on_the_hdfc_FD_calculator_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1281462000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user given with \"Monthly Payout\" deposite terms \"24\" and \"19\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Monthly Payout",
+                  "offset": 21
+                },
+                {
+                  "val": "24",
+                  "offset": 53
+                },
+                {
+                  "val": "19",
+                  "offset": 62
+                }
+              ],
+              "location": "HDFCStepDefinition.the_user_given_with_deposite_terms_and(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6613575200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the fixed deposite \"20\" and \"8800\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 20
+                },
+                {
+                  "val": "8800",
+                  "offset": 29
+                }
+              ],
+              "location": "HDFCStepDefinition.the_fixed_deposite_and(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199708100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify the aggregate interest amount",
+            "match": {
+              "location": "HDFCStepDefinition.i_verify_the_aggregate_interest_amount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@HDFCCalculator"
+          },
+          {
+            "line": 6,
+            "name": "@FixedDeposite"
+          },
+          {
+            "line": 6,
+            "name": "@FD"
+          }
+        ]
+      }
+    ],
+    "name": "Calculate the maturity amount for different deposites in HDFC bank",
+    "description": "User can calculate the maturity amount after a certain time period with a certain rate of inetrest",
+    "id": "calculate-the-maturity-amount-for-different-deposites-in-hdfc-bank",
+    "keyword": "Feature",
+    "uri": "src/test/resources/HDFCCalculator.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@HDFCCalculator"
+      }
+    ]
+  }
+]
