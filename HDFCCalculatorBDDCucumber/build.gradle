@@ -46,14 +46,11 @@ test {
     systemProperties System.getProperties()
 }
 
-task runHDFCCalculatorBDDCucumberUI(type: Test)
-{
-	dependsOn('clean','downloadDriver')
+task runHDFCCalculatorBDDCucumberUI(type: Test){
 	testLogging.showStandardStreams=true
 	exclude('**/Library.java')
 	include "runner/HDFCRunner.class"
 	systemProperties System.getProperties()
-	testLogging.showStandardStreams=true
 }
 
 gradle.startParameter.continueOnFailure = true
